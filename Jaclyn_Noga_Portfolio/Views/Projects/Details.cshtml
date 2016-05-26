@@ -1,0 +1,98 @@
+﻿@model Jaclyn_Noga_Portfolio.Models.Projects
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Projects</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjImgSrc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjImgSrc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjLang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjLang)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjDescr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjDescr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjComplete)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjComplete)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjCompleteDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjCompleteDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GitSrc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GitSrc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Partner)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Partner)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjParnterFullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjParnterFullName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProjectID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

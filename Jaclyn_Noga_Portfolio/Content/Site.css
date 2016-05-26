@@ -1,0 +1,81 @@
+﻿body {
+    padding-top: 50px;
+    /*padding-bottom: 20px;*/
+    font-family: 'Lora', Tahoma;
+    font-size: 18px;
+    /*background: url(http://www.designbolts.com/wp-content/uploads/2012/12/Triangle-White-Seamless-Patterns.jpg);*/
+}
+.navbar, h1, h4, .panel-heading, #skills{
+    font-family: "Muli", Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#footer {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    text-align: center;
+    vertical-align:central;
+    border: 1px solid transparent;
+    margin: 0;
+    position: static;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    min-height: 45px;
+}
+
+.spacer {
+    min-height: 60px;
+}
+
+.panel-heading {
+    font-size: larger;
+}
+
+.jumbotron {
+    margin-top: 30px;
+    background-color: #fcf8e3;
+    min-height: 500px;
+    padding: 50px ;
+    border: 1px solid pink;
+}
+#skills{
+    font-size:smaller;
+    padding-left: 25px;
+}
+#skills ul{
+    list-style-type: none;
+}
+#skills li:before {
+    content: "+";
+    margin-right: 15px;
+}
+#skills h4{
+    letter-spacing:2px;
+}
+.panel-body{
+    min-height:385px;
+}
+#contact{
+    text-align:center;
+}
