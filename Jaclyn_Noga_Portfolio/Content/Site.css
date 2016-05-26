@@ -43,6 +43,10 @@ input, select, textarea {
     font-size: smaller;
     padding-left: 25px;
 }
+    #skills h4{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
 
     #skills ul {
         list-style-type: none;
