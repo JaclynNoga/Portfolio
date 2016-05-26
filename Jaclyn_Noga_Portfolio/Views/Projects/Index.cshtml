@@ -5,14 +5,14 @@
 }
 
 <div class="jumbotron">
-    <div class="row" id="intro">
+    <div class="row">
         <div class="col-sm-5">
             <div class="spacer"></div>
             <h1>Jaclyn<br /> Noga</h1>
-            <p class="lead">Full-Stack Junior Developer</p>
+            <p>Full-Stack Junior Developer</p>
         </div>
         <div class="col-sm-7">
-            <img src="~/images/cleSil_withCompu_gray.png" alt="cleveland" />
+            <img src="~/images/cleSil_withCompu.png" alt="cleveland" />
         </div>
     </div>
 </div><!-- end jumbotron-->
@@ -64,7 +64,7 @@
         <div class="panel-heading">PROJECTS</div>
     </div>
 
-    <!-- start of slider -->
+    <!-- start of slider that runs through each project-->
     <div class="cycle-slideshow"
          data-cycle-slides="> div">
         <span class="cycle-prev">&#9001;</span>
@@ -75,17 +75,13 @@
         {
             <div>
                 <div class="row">
-                    <!-- start left column -->
+                    <!-- start left column. shows info for project -->
                     <div class="col-md-4 col-sm-4">
-                        <h4 style="text-transform:uppercase; font-size:larger">
+                        <h4>
                             @Html.DisplayFor(modelItem => item.ProjTitle)
                         </h4>
-                        <p>
-                            @Html.DisplayFor(modelItem => item.ProjDescr)
-                        </p>
-
+                        <p>@Html.DisplayFor(modelItem => item.ProjDescr)</p>
                         <p style="font-size:smaller">
-
                             @Html.DisplayFor(modelItem => item.ProjType)
                             |
                             @Html.DisplayFor(modelItem => item.ProjLang)
@@ -96,20 +92,23 @@
                             }
                             else {
                                 @:In Progress
-                        }
+                            }
                             @if (item.ProjParnterFullName != null)
                             {
                                 <br />@:Partner: @Html.DisplayFor(modelItem => item.ProjParnterFullName)
-                        }
+                            }
                         </p>
+                    @if (item.ProjComplete == true)
+                    {
                         <a href="@item.GitSrc" target="_blank">
-                            <img src="~/images/GitHub-Mark-32px.png" />
+                            <img src="~/images/GitHub-Mark-32px.png" alt="GitHub icon" />
                         </a>
-
+                    }
                     </div> <!-- end left column -->
-                    <!-- start right column -->
+
+                    <!-- start right column. displays screenshot of project -->
                     <div class="col-md-8 col-sm-8">
-                        <img src="@Url.Content(item.ProjImgSrc)" alt="Image" />
+                        <img src="@Url.Content(item.ProjImgSrc)" alt="Project Screenshot" />
                     </div> <!-- end right column -->
                 </div><!-- end of row-->
             </div> <!-- end of slide -->
@@ -120,17 +119,17 @@
 <section id="contact">
     <div class="spacer"></div>
     <div class="panel panel-info">
-        <div class="panel-heading">CONTACT</div>
+        <div class="panel-heading">Contact</div>
         <div class="panel-body">
             <div class="spacer"></div>
             <p>jaclyn.noga@gmail.com</p>
             <br />
             <a href="https://github.com/JaclynNoga" target="_blank">
-                <img src="~/images/GitHub-Mark-120px-plus.png" />
+                <img src="~/images/GitHub-Mark-120px-plus.png" alt="Big GitHub Icon" />
             </a>&nbsp;
             <a href="https://www.linkedin.com/in/jaclynnoga" target="_blank">
-                <img src="~/images/linkedin.png" />
+                <img src="~/images/linkedin.png" alt="Big Linked In Icon"/>
             </a>
-        </div>
-    </div>
+        </div> <!-- end of panel body -->
+    </div><!-- end of contact panel -->
 </section> <!-- end of contact section-->

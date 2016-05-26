@@ -13,6 +13,11 @@ img {
     position: relative;
 }
 
+    .cycle-slideshow h4 {
+        text-transform: uppercase;
+        font-size: larger;
+    }
+
 .cycle-prev, .cycle-next {
     font-size: 250%;
     color: #000000;
