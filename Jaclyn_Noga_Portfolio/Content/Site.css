@@ -43,7 +43,8 @@ input, select, textarea {
     font-size: smaller;
     padding-left: 25px;
 }
-    #skills h4{
+
+    #skills h4 {
         text-transform: uppercase;
         letter-spacing: 2px;
     }
@@ -84,6 +85,7 @@ input, select, textarea {
     min-height: 45px;
 }
 
+/* start return to top arrow*/
 #return-to-top {
     position: fixed;
     bottom: 20px;
@@ -98,20 +100,24 @@ input, select, textarea {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-#return-to-top i {
-    margin: 0;
-    position: relative;
-    left: 16px;
-    top: 13px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-#return-to-top:hover {
-    color: rgba(0, 0, 0, 0.9);
-}
-#return-to-top:hover i {
-    color: #fff;
-    top: 5px;
-}
+
+    #return-to-top i {
+        margin: 0;
+        position: relative;
+        left: 16px;
+        top: 13px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    #return-to-top:hover {
+        color: rgba(0, 0, 0, 0.9);
+    }
+
+        #return-to-top:hover i {
+            color: #fff;
+            top: 5px;
+        }
+/* end return to top arrow */

@@ -19,7 +19,7 @@ img {
     }
 
 .cycle-prev, .cycle-next {
-    font-size: 250%;
+    font-size: 150%;
     color: #000000;
     display: block;
     position: absolute;
