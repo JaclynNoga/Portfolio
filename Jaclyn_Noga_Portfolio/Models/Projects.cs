@@ -20,6 +20,7 @@ namespace Jaclyn_Noga_Portfolio.Models
         [Display(Name = "Image Source")]
         public string ProjImgSrc { get; set; }
 
+
         [Display(Name = "Language(s)")]
         public string ProjLang { get; set; }
 
